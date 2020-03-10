@@ -2,14 +2,12 @@
 require_once __DIR__ . "/../traits/PrezzoIvato.php";
 
 class Prodotto {
+
   public $sku;
   public $marca;
   public $modello;
   public $descrizione;
   public $prezzo;
-  use PrezzoIvato;
-
-
 
   public function __construct($_sku, $_marca, $_modello, $_prezzo )
   {
@@ -20,7 +18,7 @@ class Prodotto {
   }
 
   public function prezzoIvato($iva){
-     $prezzoIvato = ($this->prezzo * $iva) / 100;
+     $prezzoIvato = $this->prezzo - (($this->prezzo * $iva) / 100);
      return $prezzoIvato;
   }
 }

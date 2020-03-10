@@ -2,11 +2,11 @@
 
 trait PrezzoIvato
 {
+  public $prezzo;
   public $prezzoIvato;
 
-  public function prezzoIvato(){
-     $prezzoIvato = ($this->prezzo * 22) / 100;
-     return $prezzoIvato;
+  public function prezzoIvato($iva){
+     $prezzoconIva = $this->prezzo - (($this->prezzo * $iva) / 100);
+     return $this->prezzoIvato = $prezzoconIva;
   }
-
 }
