@@ -17,10 +17,12 @@ class Prodotto {
     $this->prezzo = $_prezzo;
   }
 
-  public function prezzoIvato($iva){
-     $prezzoIvato = $this->prezzo - (($this->prezzo * $iva) / 100);
-     return $prezzoIvato;
-  }
+
+//FUNZIONE IVA CHE HO INTEGRATO CON TRAIT
+  // public function prezzoIvato($iva){
+  //    $prezzoIvato = $this->prezzo - (($this->prezzo * $iva) / 100);
+  //    return $prezzoIvato;
+  // }
 }
 
 ?>
