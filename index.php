@@ -7,6 +7,7 @@ require_once "classi/Obiettivo.php";
 // creo una istanza nuova per un semplice prodotto
 $fotocamera = new Prodotto("K0345", "Canon", "EOS M50", 350);
 $fotocamera->descrizione = "Descrizione prodotto";
+$fotocamera->prezzoIvato(22);
 var_dump($fotocamera);
 
 // creo una istanza nuova per il prodotto specifico fotocamera

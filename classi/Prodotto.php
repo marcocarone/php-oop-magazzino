@@ -8,6 +8,7 @@ class Prodotto {
   public $modello;
   public $descrizione;
   public $prezzo;
+  use PrezzoIvato;
 
   public function __construct($_sku, $_marca, $_modello, $_prezzo )
   {

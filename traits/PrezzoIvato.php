@@ -2,7 +2,7 @@
 
 trait PrezzoIvato
 {
-  public $prezzo;
+  
   public $prezzoIvato;
 
   public function prezzoIvato($iva){
