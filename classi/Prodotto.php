@@ -12,8 +12,6 @@ class Prodotto {
     $this->marca = $_marca;
     $this->nome = $_modello;
     $this->prezzo = $_prezzo;
-
-
   }
 }
 
