@@ -10,7 +10,7 @@ class Prodotto {
   {
     $this->sku = $_sku;
     $this->marca = $_marca;
-    $this->nome = $_modello;
+    $this->modello = $_modello;
     $this->prezzo = $_prezzo;
   }
 }
